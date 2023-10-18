@@ -8,6 +8,17 @@ public class ControlStructurs3 {
         Random random = new Random();
         int randomNumber = random.nextInt(100);
 
+        System.out.println(randomNumber);
+
+        if(randomNumber<20){
+        System.out.println("mini");
+
+        } else if((randomNumber>20) && (randomNumber<50)){
+                System.out.println("medium");
+        }
+
+        else if(randomNumber>50)
+            System.out.println("large");
         // Gib die Zufallszahl aus
 
         // Wenn die Zahl kleiner ist als 20  gib aus "Mini"
