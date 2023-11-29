@@ -29,7 +29,7 @@ public class TicTacToe {
 
                 if (isBoardFull(board)) {
                     printBoard(board);
-                    System.out.println("Unentschieden! Das Spielfeld ist voll belegt.");
+                    System.out.println("Unentschieden! Das Spielfeld ist voll.");
                     break;
                 }
 
