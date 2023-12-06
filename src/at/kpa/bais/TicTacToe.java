@@ -2,6 +2,7 @@ package at.kpa.bais;
 
 import java.util.Scanner;
 public class TicTacToe {
+    /*
     public static void main(String[] args) {
         char[][] board = new char[3][3];
         char currentPlayer = '1';
@@ -66,28 +67,7 @@ public class TicTacToe {
         move[0] = scanner.nextInt();
         System.out.print("Spieler " + currentPlayer + ", gib deine Spalte (0-2) ein: ");
         move[1] = scanner.nextInt();
-        return move;
     }
 
-    public static boolean isValidMove(char[][] board, int row, int col) {
-        return row >= 0 && row < 3 && col >= 0 && col < 3 && board[row][col] == ' ';
-    }
-
-    public static boolean isGameWon(char[][] board, char currentPlayer, int row, int col) {
-        return (board[row][0] == currentPlayer && board[row][1] == currentPlayer && board[row][2] == currentPlayer) ||
-                (board[0][col] == currentPlayer && board[1][col] == currentPlayer && board[2][col] == currentPlayer) ||
-                (row == col && board[0][0] == currentPlayer && board[1][1] == currentPlayer && board[2][2] == currentPlayer) ||
-                (row + col == 2 && board[0][2] == currentPlayer && board[1][1] == currentPlayer && board[2][0] == currentPlayer);
-    }
-
-    public static boolean isBoardFull(char[][] board) {
-        for (int row = 0; row < 3; row++) {
-            for (int col = 0; col < 3; col++) {
-                if (board[row][col] == ' ') {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
+     */
 }
