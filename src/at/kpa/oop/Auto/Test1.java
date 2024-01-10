@@ -8,13 +8,16 @@ public class Test1 {
     public static void main (String[] args) {
         Random r = new Random();
         Auto auto = new Auto ();
+        Garage garage = new Garage(100, "Lustenauerstraße 11, 6850",180,10.0);
+
+
         System.out.println(auto.getInfoAuto());
         auto.setsFarbe ("blau");
         auto.setiLeistung (340);
         auto.setiAnzahlRaeder (4);
         System.out.println(auto.getInfoAuto());
 
-        Auto auto2 = new Auto(340, "blau", 4);
+        Auto auto2 = new Auto(340, "blau", 4, 170);
         System.out.println(auto2.getInfoAuto());
 
         ArrayList<Auto> aAutoListe = new ArrayList<>();
@@ -25,11 +28,16 @@ public class Test1 {
             int ra = r.nextInt (4 + 1 - 3) + 3;
             //max = 4 mind = 3 -- Dont forget array zugriff startet bei 0
             int fa = r.nextInt(aFarben.length-1);
-            aAutoListe.add(new Auto(ps,aFarben[fa],ra));
+            int hoehe = r.nextInt(200 + 1 - 110) + 110;
+
+            aAutoListe.add(new Auto(ps,aFarben[fa],ra,hoehe));
 
         }
         for(Auto a : aAutoListe){
             System.out.println(a.getInfoAuto());
+            garage.addAutoGarage(a);
+            System.out.println(garage.getStellplaetze() + " stell - frei " + garage.getFreiePlaetze());
+
         }
     }
 }
