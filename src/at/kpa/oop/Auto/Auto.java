@@ -19,6 +19,8 @@ public class Auto {
         this.sFarbe = sFarbe;
         this.iAnzahlRaeder = iAnzahlRaeder;
         this.fahrzeughoehe = fahrzeughoehe;
+
+
     }
 
     public int getFahrzeughoehe() {
